@@ -1,0 +1,591 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    list-style: none;
+    /* background-color: rgb(255, 254, 254); */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+
+}
+
+header nav {
+    display: block;
+    width: 40%;
+    display: flex;
+}
+
+header nav a {
+
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+.header {
+    display: none;
+}
+
+.form-btn {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+}
+
+/* めいん */
+
+main video {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+section {
+    padding: 18px;
+    width: 100%;
+    margin: 28px 0;
+}
+
+section h2 {
+    font-size: 25px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: rgb(35, 35, 202);
+}
+
+.hero {
+    position: relative;
+
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(199, 194, 195);
+}
+
+.hero p {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(199, 194, 195);
+    padding-top: 40px;
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#news dt {
+    width: 20%;
+    padding: 15px;
+}
+
+#news dd {
+    width: 80%;
+    padding: 15px;
+    display: flex;
+}
+
+#news dd p {
+    background-color: rgb(35, 35, 202);
+    color: white;
+    padding: 0px 10px;
+    margin-right: 15px;
+}
+
+#news dl {
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #c8c8c8;
+}
+
+.wrapper {
+    padding-left: 25%;
+    display: flex;
+    padding-top: 50px;
+    background-color: rgb(255, 254, 254);
+}
+
+.wrapper h2 {
+    margin-bottom: 10px;
+}
+
+.wrapper div {
+    margin-right: 5%;
+}
+
+/* アニメーション */
+.wrapper {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.wrapper.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* アバウト */
+
+.about img {
+    width: 50%;
+}
+
+.about {
+    display: flex;
+    height: 80vh;
+    background-color: white;
+}
+
+.about div {
+    align-items: center;
+    width: 30%;
+    padding-top: 70px;
+    padding-left: 30px;
+
+}
+
+.about div h3 {
+    margin-bottom: 10px;
+}
+
+.about div h2 {
+    margin-bottom: 10px;
+}
+
+.about div p {
+    border-top: 1px solid #c8c8c8;
+    margin-top: 20px;
+    padding-top: 20px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 20px;
+}
+
+.about div a {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+
+}
+
+/* アバウトアニメーション */
+.fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    /* 右から登場 */
+    transition: all 0.8s ease-out;
+}
+
+.fade-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* 選ばれる理由 */
+
+.reason {
+    text-align: center;
+    background-color: rgb(230, 227, 227);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.reason h2 {
+    color: rgb(63, 63, 63);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.reason h3 {
+    color: rgb(35, 35, 202);
+}
+
+/* No.01 */
+
+.reason-1 img {
+    width: 50%;
+}
+
+.reason-1 {
+    display: flex;
+    position: relative;
+    width: 98%;
+    margin-left: 2%;
+    margin-bottom: 100px;
+}
+
+.reason-1 div {
+    position: absolute;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 40%;
+    margin-top: 70px;
+    height: 50vh;
+    text-align: left;
+    padding: 40px;
+}
+
+.reason-1 div h2 {
+    font-size: 40px;
+    color: rgb(35, 35, 202);
+    margin-bottom: 20px;
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+}
+
+.reason-1 div h2::after {
+    background-color: #c8c8c8;
+    ;
+    /* 横線の色 */
+    content: "";
+    height: 1px;
+    /* 横線の高さ */
+    width: 350px;
+    /* 横線の長さ */
+}
+
+.reason-1 div h2::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+.reason-1 div h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.reason-1 div p {
+    width: 490px;
+}
+
+
+/* 選ばれる理由アニメーション */
+.reason-1 {
+    opacity: 0;
+    transform: translateX(50px);
+    /* 右から登場 */
+    transition: all 0.8s ease-out;
+}
+
+.reason-1.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* No.02 */
+.reason-2 img {
+    width: 50%;
+    margin-left: 48%;
+}
+
+.reason-2 {
+    display: flex;
+    position: relative;
+    width: 98%;
+    margin-right: 2%;
+    margin-bottom: 100px;
+}
+
+.reason-2 div {
+    width: 55%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    margin-top: 70px;
+    height: 50vh;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 260px;
+}
+
+.reason-2 div h2 {
+    font-size: 40px;
+    color: rgb(35, 35, 202);
+    margin-bottom: 20px;
+    align-items: center;
+    /* 横線を上下中央 */
+    display: flex;
+    /* 文字と横線を横並び */
+}
+
+.reason-2 div h2::after {
+    background-color: #c8c8c8;
+    ;
+    /* 横線の色 */
+    content: "";
+    height: 1px;
+    /* 横線の高さ */
+    width: 350px;
+    /* 横線の長さ */
+}
+
+.reason-2 div h2::after {
+    margin-left: 15px;
+    /* 文字との余白 */
+}
+
+.reason-2 div h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.reason-2 div p {
+    width: 490px;
+}
+
+/* 選ばれる理由アニメーション */
+.reason-2 {
+    opacity: 0;
+    transform: translateX(50px);
+    /* 右から登場 */
+    transition: all 0.8s ease-out;
+}
+
+.reason-2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* サービス内容 */
+.service {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.service ul {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service li {
+    width: 45%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.service li h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgb(35, 35, 202);
+}
+
+.service li p {
+    font-size: 15px;
+}
+
+/* 採用情報 */
+.recruit-1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 0;
+
+}
+
+/* 左背景 */
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58%;
+    height: 100%;
+    background: url(img/IF-recruit01.avif) center/cover no-repeat;
+    z-index: 1;
+    margin-bottom: 0;
+
+    /* 右端だけ斜めにカット */
+    clip-path: polygon(0 0,
+            /* 左上 */
+            100% 0,
+            /* 右上 */
+            80% 100%,
+            /* 右下を上にずらす（ここで斜めの角度を作る） */
+            0 100%
+            /* 左下 */
+        );
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    /* ← 白で40%透明（薄く見える） */
+    z-index: 1;
+}
+
+/* 右背景 */
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background: url(img/IF-recruit02.avif) center/cover no-repeat;
+    margin-bottom: 0;
+
+}
+
+/* テキスト */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 60px;
+    padding-left: 20%;
+    color: #fff;
+    /* 背景が暗い場合 */
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.content h2:nth-child(3) {
+    color: rgb(35, 35, 202);
+    font-size: 25px;
+}
+
+.content p {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    width: 420px;
+    margin-bottom: 20px;
+}
+
+.content a {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    width: 350px;
+
+}
+
+
+/* お問い合わせ */
+.contact {
+    text-align: center;
+    background-image: linear-gradient(rgba(83, 81, 81, 0.85), rgba(26, 25, 25, 0.85)), url(img/IF-recruit01.avif);
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.contact h3 {
+    font-size: 25px;
+    color: white;
+    padding-top: 40px;
+
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact div {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.contact div img {
+    width: 50%;
+}
+
+.contact div a {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    width: 350px;
+
+
+}
+
+/* フッター */
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+
+    font-size: 15px;
+}

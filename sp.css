@@ -1,0 +1,348 @@
+@media(max-width:800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    header h1 img {
+        width: 300px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* メインタグ----------------------- */
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .hero video {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    /* お知らせ------------ */
+
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+
+
+    /* IFについて----------------------- */
+
+    .about {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .about img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .about div {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .about div h3 {
+        margin-bottom: 0px;
+    }
+
+    .about div h2 {
+        margin-bottom: 5px;
+    }
+
+    .about div p {
+        border-top: 1px solid #c8c8c8;
+        margin-top: 10px;
+        padding-top: 10px;
+        color: rgb(63, 63, 63);
+        margin-bottom: 10px;
+    }
+
+    /* 選ばれる理由----------------------- */
+    /* No.01 */
+    .reason-1 img {
+        width: 100%;
+    }
+
+    .reason-1 {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .reason-1 div {
+        width: 90%;
+        background: rgba(255, 255, 255, 0.7);
+        margin-left: 5%;
+        margin-top: 20px;
+        height: 50vh;
+        text-align: left;
+        padding: 5px;
+    }
+
+
+    .reason-1 div p {
+        width: 400px;
+
+    }
+
+    /* No.2------------------------------- */
+
+    .reason-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .reason-2 img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reason-2 div {
+        width: 90%;
+        background: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        margin-top: 20px;
+        height: 50vh;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .reason-2 div p {
+        width: 400px;
+
+    }
+
+/* サービス内容----------------------- */
+
+.service{
+padding-top: 50px;
+}
+
+.service ul {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.service li {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* 採用情報-------------------------- */
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+    color: #fff;
+    /* 背景が暗い場合 */
+}
+
+/* お問い合わせ----------------------- */
+
+.contact h3 {
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+    
+}
+
+.contact p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contact div {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px;
+}
+
+.contact div img{
+width: 70%;
+}
+
+.contact div a {
+    background-color: rgb(16, 16, 199);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 11px;
+    width: 350px;
+    align-items: center;
+
+}
+
+    /* ハンバーガー--------------------------- */
+
+    .header {
+        display: block;
+    }
+
+    .hamburger-overlay {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 48px;
+        height: 48px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .hamburger-overlay__line {
+        position: absolute;
+        left: 11px;
+        width: 26px;
+        height: 2px;
+        background-color: #333;
+        transition: all .6s;
+    }
+
+    .hamburger-overlay__line:nth-of-type(1) {
+        top: 14px;
+    }
+
+    .hamburger-overlay__line:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .hamburger-overlay__line:nth-of-type(3) {
+        top: 32px;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line {
+        background-color: #fff;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(1) {
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(3) {
+        transform: translateY(-9px) rotate(45deg);
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .6s;
+        z-index: 900;
+    }
+
+    .nav-overlay.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-overlay__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-overlay__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-overlay__item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all .6s;
+    }
+
+    .nav-overlay.active .nav-overlay__item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-overlay.active .nav-overlay__item:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-overlay__link {
+        display: inline-block;
+        padding: 20px;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color .3s;
+    }
+
+
+}
